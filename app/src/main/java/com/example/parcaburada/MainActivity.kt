@@ -73,6 +73,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_tools -> navigateToFragment(R.id.nav_tools)
             R.id.nav_share -> navigateToFragment(R.id.nav_share)
             R.id.nav_send -> navigateToFragment(R.id.nav_send)
+            R.id.nav_sepet -> navigateToFragment(R.id.nav_sepet)
         }
         return true
     }
@@ -95,7 +96,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.shop -> navigateToFragment(R.id.nav_gallery)
+            R.id.shop -> navigateToFragment(R.id.nav_sepet)
         }
         return super.onOptionsItemSelected(item)
     }
